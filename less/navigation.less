@@ -1,21 +1,17 @@
 // Navigation Styles here
 header{
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-    border-bottom: 1px dashed lightgray;
+    .flex();
+    margin: 2rem 0 0;
+    border-bottom: 2px dashed @navigation-border;
     padding-bottom: 2rem;
 
     nav{
         max-width: 800px;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        .flex(row, space-between);
 
         ul{
-            display: flex;
-            justify-content: space-around;
+            .flex(row, space-around);
         }
         li{
             font-size: 2rem;
