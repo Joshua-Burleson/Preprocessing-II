@@ -343,3 +343,73 @@ header nav li a:hover {
     align-items: center;
   }
 }
+.mountain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.mountain .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mountain .text-content h1 {
+  font-weight: bolder;
+}
+.sign-up-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.sign-up-form ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up-form ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5% 0;
+}
+.sign-up-form ul li span {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 4%;
+}
+.sign-up-form ul li input {
+  height: 4rem;
+  width: 50rem;
+  font-size: 2rem;
+}
+.sign-up-form ul li input[type=date] {
+  background: url(/img/gnome-calendar.png) 97% 75% no-repeat;
+}
+.sign-up-form ul li input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sign-up-form ul li input[type=date]::-webkit-calendar-picker-indicator {
+  width: 5%;
+  opacity: 0;
+}
+.sign-up-form ul li .submit {
+  color: white;
+  background-color: teal;
+  height: 5rem;
+  width: 25rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,56 @@
+.mountain{
+    .flex();
+    width: 100%;
+
+    .text-content{
+        .flex(column; center);
+        h1{
+            font-weight: bolder;
+        }
+    }
+}
+
+
+
+.sign-up-form{
+    .flex();
+    width: 100%;
+    margin-bottom: 5%;
+
+    ul{
+        .flex(column; center);
+
+        li{
+            .flex(column; center; flex-start);
+            margin: 5% 0;
+            span{
+                color: black;
+                font-weight: bold;
+                font-size: 2rem;
+                margin-right: 4%;
+            }
+            input{
+                height: 4rem;
+                width: 50rem;
+                font-size: 2rem;
+                &[type=date]{
+                    
+                    background: url(/img/gnome-calendar.png) 97% 75% no-repeat;
+                    
+                    &::-webkit-inner-spin-button{
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    &::-webkit-calendar-picker-indicator{
+                        width: 5%;
+                        opacity: 0;
+                    }
+                }
+            }
+            .submit{
+                .flexBtn(5rem, 25rem);
+            }
+        }
+    }
+}
