@@ -10,6 +10,18 @@ header{
         width: 100%;
         .flex(row, space-between);
 
+        @media @mobile{
+            .flex(column, space-around);
+
+            h1{
+                margin-bottom: 2%;
+            }
+        }
+
+        h1{
+            font-weight: bold;
+        }
+
         ul{
             .flex(row, space-around);
         }
